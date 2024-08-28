@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import "./CSS/style.css";
+import Header from './Header';
+import Student from './Student';
+import Footer from './Footer';
+import MainBody from './MainBody';
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(<div style={{backgroundColor:'black',color:'grey'}}>
+  <Header/>
+  <MainBody/>
+  <div className="container-row"> Students Enrolled </div>
+  <Student experience={2}  name="Krish Walley" headshot="https://api.lorem.space/image/face?w=150&h=157"/>
+  <Student experience={5}  name="Angel Walley" headshot="https://api.lorem.space/image/face?w=150&h=156"/>
+  <Student experience={7}  name="Raina Walley" headshot="https://api.lorem.space/image/face?w=150&h=151"/>
+  <Footer/>
+  </div>)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

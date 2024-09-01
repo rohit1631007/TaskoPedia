@@ -1,4 +1,4 @@
-import logo from "./images/react.png";
+import logo from "../images/react.png";
 function MainHeader(){
     return (<div className="pt-3 py-1 pt-2" style={{background:"black"}}>
       <img src={logo} style={{height:"45px",vertical:"top"}} alt=""></img>
@@ -10,7 +10,7 @@ function MainHeader(){
   backgroundColor:"blue"
   };
   function SubHeader(){
-    return<p style= {subHeaderStyle}>This will be exciting Course</p>
+    return<p style= {subHeaderStyle} className="text-center">This will be exciting Course</p>
   };
   export default function Header(){
     return(
